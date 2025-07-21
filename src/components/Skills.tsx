@@ -1,7 +1,7 @@
 'use client';
 
 import React from "react";
-import { Code, Database, Globe, Wrench, Smartphone, Zap, Server, Palette } from "lucide-react";
+import { Code, Database, Globe, Wrench, Zap, Server } from "lucide-react";
 
 const Skills = () => {
     const skillCategories = [
@@ -145,7 +145,7 @@ const Skills = () => {
     ];
 
     return (
-        <section id="Skills" className="py-20 bg-gray-50">
+        <section id="skills" className="py-20 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

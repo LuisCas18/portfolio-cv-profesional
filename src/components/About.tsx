@@ -38,7 +38,7 @@ const About = () => {
                   <MapPin className="text-primary-600" size={20} />
                   <span className="font-medium text-gray-900">Ubicación</span>
                 </div>
-                <p className="text-gray-600">Ciudad de México, México</p>
+                <p className="text-gray-600">Villahermosa, Tabasco. México</p>
               </div>
 
               <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
@@ -46,7 +46,7 @@ const About = () => {
                   <Calendar className="text-secondary-600" size={20} />
                   <span className="font-medium text-gray-900">Experiencia</span>
                 </div>
-                <p className="text-gray-600">6 años</p>
+                <p className="text-gray-600">6+ años</p>
               </div>
             </div>
 

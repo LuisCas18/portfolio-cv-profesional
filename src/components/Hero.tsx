@@ -42,7 +42,7 @@ const Hero = () => {
                 <ArrowDown size={18} />
               </button>
 
-              <a href="/cv-2025-luis.pdf"
+              <a href="/assets/docs/CV 2025 - Luis Eduardo Castro Bautista.pdf"
                 download
                 className="px-8 py-3 border-2 border-primary-600 text-primary-600 rounded-lg font-medium hover:bg-primary-600 hover:text-white transition-all duration-300 flex items-center space-x-2"
               >
@@ -53,8 +53,8 @@ const Hero = () => {
 
             <div className="flex justify-center space-x-6">
               {[
-                { icon: Github, href: '#', label: 'GitHub' },
-                { icon: Linkedin, href: '#', label: 'LinkedIn' },
+                { icon: Github, href: 'https://github.com/LuisCas18', label: 'GitHub' },
+                { icon: Linkedin, href: 'https://www.linkedin.com/in/luis-eduardo-castro-bautista-7b49b0211/', label: 'LinkedIn' },
                 { icon: Mail, href: '#contact', label: 'Email' }
               ].map((social, index) => {
                 const Icon = social.icon;
