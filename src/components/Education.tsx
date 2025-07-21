@@ -1,7 +1,7 @@
 'use client';
 
 import React from "react";
-import { GraduationCap, Award, Calendar, MapPin, BookOpen, Trophy, ExternalLink, CheckCircle } from 'lucide-react';
+import { GraduationCap, Award, Calendar, MapPin, BookOpen, ExternalLink, CheckCircle } from 'lucide-react';
 
 const Education = () => {
     const education = [
@@ -95,14 +95,14 @@ const Education = () => {
         // }
     ];
 
-    const courses = [
-        'Advanced React Patterns - Kent C. Dodds',
-        'Node.js Microservices - Udemy',
-        'AWS Cloud Practitioner - A Cloud Guru',
-        'Docker & Kubernetes - Pluralsight',
-        'GraphQL with React - Apollo',
-        'TypeScript Masterclass - Zero to Hero'
-    ];
+    // const courses = [
+    //     'Advanced React Patterns - Kent C. Dodds',
+    //     'Node.js Microservices - Udemy',
+    //     'AWS Cloud Practitioner - A Cloud Guru',
+    //     'Docker & Kubernetes - Pluralsight',
+    //     'GraphQL with React - Apollo',
+    //     'TypeScript Masterclass - Zero to Hero'
+    // ];
 
     return (
         <section id="education" className="py-20 bg-gray-50">
@@ -217,7 +217,7 @@ const Education = () => {
                                     <div className="mb-4">
                                         <h5 className="font-semibold text-gray-900 mb-3">Habilidades desarrolladas:</h5>
                                         <div className="flex flex-wrap gap-2">
-                                            {certifications[1].skills.map((skill, i) => (
+                                            {certifications[1]?.skills?.map((skill, i) => (
                                                 <span key={i} className="px-3 py-1 bg-cyan-50 text-cyan-700 rounded-full text-sm font-medium">
                                                     {skill}
                                                 </span>
@@ -271,7 +271,7 @@ const Education = () => {
 
                                     <h5 className="font-semibold text-gray-900 mb-4">Cursos completados:</h5>
                                     <div className="space-y-4">
-                                        {certifications[0].courses.map((course, i) => (
+                                        {certifications[0]?.courses?.map((course, i) => (
                                             <div key={i} className="bg-white rounded-lg p-4 border border-gray-200">
                                                 <div className="flex items-start justify-between mb-3">
                                                     <div className="flex-1">
@@ -340,22 +340,22 @@ const Education = () => {
 
                 {/* Courses Section */}
                 {/* <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center space-x-3">
-            <BookOpen className="text-accent-600" size={28} />
-            <span>Cursos y Capacitaciones Adicionales</span>
-          </h3>
-          
-          <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {courses.map((course, index) => (
-                <div key={index} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors duration-300">
-                  <div className="w-2 h-2 bg-primary-600 rounded-full flex-shrink-0"></div>
-                  <span className="text-gray-700 text-sm font-medium">{course}</span>
+                <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center space-x-3">
+                    <BookOpen className="text-accent-600" size={28} />
+                    <span>Cursos y Capacitaciones Adicionales</span>
+                </h3>
+
+                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {courses.map((course, index) => (
+                        <div key={index} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors duration-300">
+                        <div className="w-2 h-2 bg-primary-600 rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-700 text-sm font-medium">{course}</span>
+                        </div>
+                    ))}
+                    </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </div> */}
+                </div> */}
 
                 {/* Learning Progress */}
                 <div className="mb-16">
@@ -396,18 +396,18 @@ const Education = () => {
 
                 {/* Learning Philosophy */}
                 {/* <div className="text-center">
-          <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl p-8 border border-primary-100">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Filosofía de Aprendizaje</h3>
-            <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Creo firmemente en el aprendizaje continuo y la mejora constante. La tecnología evoluciona 
-              rápidamente, por lo que mantengo una mentalidad de crecimiento y busco constantemente 
-              nuevas oportunidades para expandir mis conocimientos y habilidades. Mi participación activa 
-              en certificaciones de Meta y Cisco demuestra mi compromiso con mantenerme actualizado 
-              en las tecnologías más demandadas del mercado, desde desarrollo front-end hasta programación 
-              con Python.
-            </p>
-          </div>
-        </div> */}
+                <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl p-8 border border-primary-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Filosofía de Aprendizaje</h3>
+                <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Creo firmemente en el aprendizaje continuo y la mejora constante. La tecnología evoluciona 
+                rápidamente, por lo que mantengo una mentalidad de crecimiento y busco constantemente 
+                nuevas oportunidades para expandir mis conocimientos y habilidades. Mi participación activa 
+                en certificaciones de Meta y Cisco demuestra mi compromiso con mantenerme actualizado 
+                en las tecnologías más demandadas del mercado, desde desarrollo front-end hasta programación 
+                con Python.
+                </p>
+            </div>
+            </div> */}
             </div>
         </section>
     );
