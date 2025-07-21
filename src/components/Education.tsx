@@ -217,7 +217,7 @@ const Education = () => {
                                     <div className="mb-4">
                                         <h5 className="font-semibold text-gray-900 mb-3">Habilidades desarrolladas:</h5>
                                         <div className="flex flex-wrap gap-2">
-                                            {certifications[1].skills.map((skill, i) => (
+                                            {certifications[1]?.skills?.map((skill, i) => (
                                                 <span key={i} className="px-3 py-1 bg-cyan-50 text-cyan-700 rounded-full text-sm font-medium">
                                                     {skill}
                                                 </span>
@@ -271,7 +271,7 @@ const Education = () => {
 
                                     <h5 className="font-semibold text-gray-900 mb-4">Cursos completados:</h5>
                                     <div className="space-y-4">
-                                        {certifications[0].courses.map((course, i) => (
+                                        {certifications[0]?.courses?.map((course, i) => (
                                             <div key={i} className="bg-white rounded-lg p-4 border border-gray-200">
                                                 <div className="flex items-start justify-between mb-3">
                                                     <div className="flex-1">
